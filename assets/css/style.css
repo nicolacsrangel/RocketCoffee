@@ -1,0 +1,107 @@
+:root {
+  --backgrond: #000;
+  --text-color: #FFF;
+  --button: #8257E5;
+  --border: #29292E;
+  --border-menu-mobile: #A8A8B3;
+  --text-color-menu-mobile: #E1E1E6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background: var(--backgrond);
+}
+
+li, a {
+  font-size: 17px;
+  color: var(--text-color);
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 280px;
+}
+
+header > img {
+  cursor: pointer;
+  width: 50px;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 32px;
+}
+
+nav-links li, a {
+  transition: all 0.3s ease 0s;
+}
+
+nav-links li, a:hover {
+  color: var(--button);
+}
+
+.button {
+  padding: 11px 38px;
+  border: 1px solid var(--button);
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: all 0.5s ease 0s;
+}
+
+.button:hover {
+  background: var(--button);
+  color: var(--text-color);
+}
+
+main {
+  color: var(--text-color);
+  text-align: center;
+  margin-top: 56px;
+  font-weight: 700 bold;
+}
+
+main p {
+  font-weight: 700;
+  font-size: 65px;
+}
+
+main #title-code {
+  color: var(--backgrond);
+  text-shadow: -1px -1px 0 var(--button),
+                1px -1px 0 var(--button), 
+                -1px 1px 0 var(--button), 
+                1px 1px 0 var(--button);
+}
+
+.coffee-image {
+  text-align: center;
+}
+
+.blur {
+  position: absolute;
+  width: 321px;
+  height: 321px;
+  left: -29;
+  top: 424px;
+  background-color: var(--button);
+  filter: blur(200px);
+  z-index: -1;
+}
+
+.b-footer {
+  left: 1198px;
+  top: -63px;
+  z-index: -1;
+  filter: blur(200px);
+}
